@@ -78,9 +78,13 @@ span {
 
     div {
         border-radius: 0;
-        height: 90%;
+        height: 80%;
         width: 90%;
         background-color: gray;
+    }
+
+    span {
+        margin-right: 50px;
     }
 
     ul {
