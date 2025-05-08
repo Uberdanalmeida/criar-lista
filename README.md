@@ -1,4 +1,4 @@
-![Projeto crie sua lista](imagem/imagem-projeto-lista.png)
+![Projeto crie sua lista](imagem/lista.png)
 
 # Crie Sua Lista
 
