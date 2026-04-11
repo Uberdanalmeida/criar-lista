@@ -1,18 +1,20 @@
 function clique() {
-    const textInput = document.getElementById('ttexto')
-    const product = document.createElement('li')
-    product.innerHTML = textInput.value + '<span onclick="delet(this)">❌</span>'
+  const textInput = document.getElementById("ttexto");
 
-    document.querySelector('ul').appendChild(product)
+  if (textInput.value.trim() == "") {
+    alert("Item inválido");
+    return;
+  }
 
-    if(textInput.value.length == '') {
-        alert('item inválido.')
-        product.style.display = 'none'
-    }
+  const product = document.createElement("li");
 
-    textInput.value = ''
+  product.innerHTML = textInput.value + '<span onclick="delet(this)">❌</span>';
+
+  document.querySelector("ul").appendChild(product);
+
+  textInput.value = "";
 }
 
 function delet(product) {
-    product.parentElement.remove()
+  product.parentElement.remove();
 }
